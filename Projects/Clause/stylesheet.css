@@ -1,0 +1,548 @@
+/* Custom Font */
+@font-face {
+    font-family: 'Nothingfont';
+    src: url('font/ndot-47-inspired-by-nothing.otf') format('opentype'),
+            url('font/ndot-47-inspired-by-nothing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Nothing font on Noice*/
+.logo {
+    font-family: 'Nothingfont', sans-serif;
+    font-weight: normal;
+    font-size: 24px; /* Adjust size if needed */
+    letter-spacing: 1px; /* Adjust spacing if needed */
+   
+}
+.logo:hover {
+    color: #d93021;
+}
+ /* RESET & BASE STYLES */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* CUSTOM FONT */
+@font-face {
+    font-family: 'Nothingfont';
+    src: url('font/ndot-47-inspired-by-nothing.otf') format('opentype'),
+         url('font/ndot-47-inspired-by-nothing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* LOGO BAR CONTAINER */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* MAIN LOGO BAR (WHITE) */
+.logo-bar {
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 40%; /* Takes 60% of space */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* BRAND LOGO IN MAIN BAR */
+.brand-logo {
+    
+    width: 40px;
+    
+    height: 50px;
+    object-fit: contain;
+    padding-left: 10px;
+}
+
+/* NOICE TEXT */
+.logo-text {
+    font-family: 'Nothingfont', sans-serif;
+    font-size: 22px;
+    color: black;
+    margin-left: 15px;
+    letter-spacing: 0.8px;
+    margin-right: 35%;
+}
+
+/* SUB-LOGO BAR (BLACK) */
+.sub-logo-bar {
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* INSTAGRAM LOGO */
+.instagram-logo {
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+}
+
+.instagram-logo i {
+    color: white;
+    font-size: 10px;
+}
+
+/* INSTAGRAM ID */
+.instagram-id {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+/* DARK MODE */
+body.dark-mode .logo-bar {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .logo-text {
+    color: white;
+}
+
+body.dark-mode .sub-logo-bar {
+    background-color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .logo-bar {
+        width: 70%;
+        height: 45px;
+    }
+    
+    .sub-logo-bar {
+        height: 36px;
+        padding: 0 12px;
+    }
+    
+    .brand-logo {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .instagram-id {
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+/* Content Container */
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Reduce gap between nav-links and toggle */
+}
+
+.nav-links a:nth-child(3) {
+    color: #d93021; /* Change to your preferred color */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust spacing between nav items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+.nav-links a:nth-child(3) {
+    color: icon {
+        position: relative;
+        width: 40px; /* Adjust based on your icon size */
+    }
+    
+    .icon img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .icon .hover {
+        opacity: 0; /* Initially hidden */
+    }
+    
+    .icon:hover .default {
+        opacity: 0; /* Hide default on hover */
+    }
+    
+    .icon:hover .hover {
+        opacity: 1; /* Show hover version */
+    }
+    ; /* Change to your preferred color */
+}
+
+
+.dark-mode-toggle {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-title {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-title::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background-color: #444;
+    margin-left: 5px;
+}
+
+.hire-button {
+    background-color: #d93021;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.see-work {
+    font-size: 13px;
+    color: #444;
+}
+
+.editing-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center align */
+    margin-top: 20px;
+}
+
+.icon {
+    align-items: center;
+    position: relative;
+    width: 40px; /* Adjust based on your icon size */
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon .hover {
+    opacity: 0; /* Initially hidden */
+}
+
+.icon:hover .default {
+    opacity: 0; /* Hide default on hover */
+}
+
+.icon:hover .hover {
+    opacity: 1; /* Show hover version */
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.projects-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .profile-name {
+        font-size: 24px;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .header-section {
+        padding: 20px;
+    }
+}
+
+/* Add these at the end of your CSS file */
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark-mode .header-section {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+body.dark-mode .nav-links a {
+    color: #f2f2f2;
+}
+
+body.dark-mode .profile-title {
+    color: #ccc;
+}
+
+body.dark-mode .see-work {
+    color: #ccc;
+}
+
+body.dark-mode .projects-section {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #444;
+}
+
+body.dark-mode .toggle-circle {
+    background-color: #d93021;
+}
+
+/* deepseek black rounded backgrund */
+/* Replace your existing .logo styles with this: */
+.logo {
+    font-family: 'Nothingfont', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px; /* Adjust padding as needed */
+    border-radius: 20px; /* Rounded corners */
+    display: inline-block;
+    transition: all 0.3s ease;
+    min-width: 120px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.logo:hover {
+    color: #d93021;
+    background-color: #111; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Optional: slight scale effect on hover */
+}
+/* Alternative dark mode logo styling */
+body.dark-mode .logo {
+    background-color: #000;
+    color: #d93021;
+    border: 1px solid #d93021;
+}
+
+body.dark-mode .logo:hover {
+    background-color: #d93021;
+    color: #000;
+}
+/* Add this if you want more width control */
+.logo {
+    /* ... previous styles ... */
+    min-width: 140px; /* Increased width */
+    padding: 10px 20px; /* More padding */
+    border-radius: 25px; /* More rounded */
+}
+/* extend the header background to the right side */
+/* Add these new styles */
+.header-section {
+    position: relative;
+    overflow: hidden; /* Ensures the extended background stays contained */
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/* Extended background pseudo-element */
+nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100px; /* Extends beyond container */
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    background-color: inherit; /* Matches header background */
+    border-radius: 0 20px 20px 0; /* Rounded right side */
+    z-index: -1;
+}
+
+.social-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 40px; /* Adjust position as needed */
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d93021;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram-id {
+    font-size: 12px;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #222;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d93021;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .instagram-id,
+body.dark-mode .social-icons a {
+    color: #f2f2f2;
+}
+
+body.dark-mode .profile-pic {
+    border-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+    nav::after {
+        right: -50px;
+        width: 200px;
+    }
+    
+    .social-profile {
+        right: 20px;
+    }
+    
+    .instagram-id {
+        display: none; /* Hide username on mobile if needed */
+    }
+}
+/* Add subtle animation to profile picture */
+.profile-pic {
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+/* Add this to make sure the extended background doesn't overlap content */
+.header-section {
+    padding-right: 150px; /* Adjust based on your social section width */
+}

@@ -1,0 +1,263 @@
+/* Custom Font */
+@font-face {
+    font-family: 'Nothingfont';
+    src: url('font/ndot-47-inspired-by-nothing.otf') format('opentype'),
+            url('font/ndot-47-inspired-by-nothing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Nothing font on Noice*/
+.logo {
+    font-family: 'Nothingfont', sans-serif;
+    font-weight: normal;
+    font-size: 24px; /* Adjust size if needed */
+    letter-spacing: 1px; /* Adjust spacing if needed */
+   
+}
+.logo:hover {
+    color: #d93021;
+}
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;}   
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    color: #222;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header Section - With padding and rounded corners */
+.header-section {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 85vh; /* Expands to 85% of viewport height */
+}
+;
+}
+
+/* Content Container */
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Reduce gap between nav-links and toggle */
+}
+
+.nav-links a:nth-child(3) {
+    color: #d93021; /* Change to your preferred color */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Adjust spacing between nav items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+.nav-links a:nth-child(3) {
+    color: .icon {
+        position: relative;
+        width: 40px; /* Adjust based on your icon size */
+    }
+    
+    .icon img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .icon .hover {
+        opacity: 0; /* Initially hidden */
+    }
+    
+    .icon:hover .default {
+        opacity: 0; /* Hide default on hover */
+    }
+    
+    .icon:hover .hover {
+        opacity: 1; /* Show hover version */
+    }
+    ; /* Change to your preferred color */
+}
+
+
+.dark-mode-toggle {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-title {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile-title::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background-color: #444;
+    margin-left: 5px;
+}
+
+.hire-button {
+    background-color: #d93021;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.see-work {
+    font-size: 13px;
+    color: #444;
+}
+
+.editing-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center align */
+    margin-top: 20px;
+}
+
+.icon {
+    align-items: center;
+    position: relative;
+    width: 40px; /* Adjust based on your icon size */
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon .hover {
+    opacity: 0; /* Initially hidden */
+}
+
+.icon:hover .default {
+    opacity: 0; /* Hide default on hover */
+}
+
+.icon:hover .hover {
+    opacity: 1; /* Show hover version */
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.projects-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .profile-name {
+        font-size: 24px;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .header-section {
+        padding: 20px;
+    }
+}
+

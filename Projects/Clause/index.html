@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
+</head>
+<body>
+       <div class="container">
+        <section class="header-section">
+            <div class="logo-container">
+                <div class="logo-bar">
+                    <span class="logo-text">NOICE</span>
+                    <div class="sub-logo-bar">
+                        <div class="instagram-logo">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span class="instagram-id">@editwithnoice</span>
+                    </div>
+                    <img src="icon/blackbg.png" alt="Brand Logo" class="brand-logo">
+                </div>
+                
+                <div class="nav-container">
+                    <div class="nav-links">
+                        <a href="#">Work</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="dark-mode-toggle">
+                        <div class="toggle-circle"></div>
+                    </div>
+                </div>
+            </nav>
+         
+            
+            <div class="profile-section">
+                <h1 class="profile-name">Mohamed Rashith</h1>
+                <p class="profile-title">Video Editor    //</p>
+                
+                <div class="profile-actions">
+                    <button class="hire-button">Hire me</button>
+                    <span class="see-work">see work</span>
+                </div>
+                
+                <div class="editing-icons">
+                    <div class="icon">
+                        <img src="icon/photoshop.png" alt="Photoshop" class="default" />
+                        <img src="icon/photoshop-hover.png" alt="Photoshop" class="hover" />
+                    </div>
+                    <div class="icon">
+                        <img src="icon/premiere-pro.png" alt="Premiere Pro" class="default" />
+                        <img src="icon/premiere-pro-hover.png" alt="Premiere Pro" class="hover" />
+                    </div>
+                    <div class="icon">
+                        <img src="icon/after-effects.png" alt="After Effects" class="default" />
+                        <img src="icon/after-effects-hover.png" alt="After Effects" class="hover" />
+                    </div>
+                </div>
+                
+                
+                
+        
+            </div>
+        </section>
+        
+        <section class="projects-section">
+            <h2 class="projects-title">Projects</h2>
+            <!-- Project cards would go here -->
+        </section>
+    </div>
+
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+    const toggleCircle = document.querySelector('.toggle-circle');
+    const headerSection = document.querySelector('.header-section');
+    const profileTitle = document.querySelector('.profile-title');
+    const seeWork = document.querySelector('.see-work');
+    const archiveLink = document.querySelector('.archive-link');
+
+    let isDarkMode = false;
+
+    darkModeToggle.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        
+        if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+            toggleCircle.style.transform = 'translateX(24px)'; // Move to the right
+        } else {
+            document.body.classList.remove("dark-mode");
+            toggleCircle.style.transform = 'translateX(0)'; // Move back to the left
+        }
+    });
+
+    </script>
+</body>
+</html>
